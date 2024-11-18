@@ -1,1 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+#iconrow3 {
+  transform: rotate(180deg);
+}
+#card {
+  transform: rotate(6deg);
+}

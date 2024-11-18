@@ -12,17 +12,52 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid d-flex justify-content-center p-5 flex-column"
+      style="background-color: green; height: 100vh;"
+    >
+      <div id="cardrow" class="d-flex justify-content-center">
+        <div
+          id="card"
+          class="card border border-dark border-4 rounded-3 shadow-lg p-3 mb-5 bg-body rounded"
+          style="height:500px; width:350px"
+        >
+          <div
+            class="row position-absolute top-0 start-0 p-3 display-4"
+            id="row1"
+            style="color: black;"
+          ></div>
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+            id="row2"
+            style="color: black; font-size: 10rem;"
+          ></div>
+          <div
+            class="row position-absolute bottom-0 end-0 p-3 display-4"
+            id="row3"
+            style="color: black;"
+          ></div>
+        </div>
+      </div>
+      <div class="row" id="cardsize">
+        <h3 class="text-white justify-content-center">
+          ¿Qué tamaño quieres que tenga tu carta?
+        </h3>
+        <div class="col-6">
+          <label for="inputalto" class="form-label text-white">Alto</label>
+          <input type="number" class="form-control" id="inputalto" />
+        </div>
+        <div class="col-6">
+          <label for="inputancho" class="form-label text-white">Ancho</label>
+          <input type="number" class="form-control" id="inputancho" />
+        </div>
+        <div class="col-12 p-2">
+          <button type="submit" class="btn btn-primary" id="enviar">
+            ¡Cambia el tamaño!
+          </button>
+        </div>
       </div>
     </div>
   </body>
