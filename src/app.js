@@ -8,8 +8,8 @@ import "./assets/img/4geeks.ico";
 const suite = ["♦", "♥", "♠", "♣"];
 const valores = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"];
 const valor = document.getElementById("row2");
-const iconUp = document.getElementById("iconrow1");
-const iconDown = document.getElementById("iconrow3");
+const iconUp = document.getElementById("row1");
+const iconDown = document.getElementById("row3");
 const carta = document.getElementById("card");
 
 function cartaAleatoria() {
@@ -21,9 +21,9 @@ function cartaAleatoria() {
   document.querySelector("#row1").innerHTML = suite[randomPalo];
   document.querySelector("#row3").innerHTML = suite[randomPalo];
   if (randomPalo === 2 || randomPalo === 3) {
-    document.querySelector("#row1").style.color = "red";
-    document.querySelector("#row2").style.color = "red";
-    document.querySelector("#row3").style.color = "red";
+    iconUp.style.color = "red";
+    valor.style.color = "red";
+    iconDown.style.color = "red";
   } else {
     document.querySelector("#row1").style.color = "black";
     document.querySelector("#row2").style.color = "black";
